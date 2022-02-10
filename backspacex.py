@@ -5,12 +5,12 @@ class backspacex:
         self.name = userName # your object will be given a user name, i.e. your group name
         self.maxStep = maxStepSize # maximum length of the returned path from run()
         self.maxTime = maxTime # run() is supposed to return before maxTime
-                                                                                                                                                                                                                
+        self.colors = clrDictionary                                                                                                                                                                                                        
     def run(self, img, info):
         myinfo = info[self.name]
 
         #komsu renklerin puanlarini bul
-        for tup in clrDictionary.values(): #.values()
+        for tup in self.colors.values(): #.values()
           try:
             if tuple([img[myinfo[0][0]+50,myinfo[0][1]]]) in tup : puan1 = tup[1]
           except : pass
