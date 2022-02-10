@@ -20,7 +20,7 @@ class backspacex:
         #komsu renklerin puanlarini bul
         for tup in self.colors.values(): #.values()
           try:
-            if tuple(img[y+50,x]) in tup:
+            if tuple(img[y+50,x]) in tup: puan1 = tup[1]
           except : pass
           try:
             if tuple(img[y, x+50]) in tup : puan2 = tup[1]
