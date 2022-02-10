@@ -50,7 +50,6 @@ class backspacex:
 
         #hedef noktasini bul ve oraya git  
         hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
-        print(hedef)
         if hedef == puan1: 
             return  [ [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]+1 ] ]
         
