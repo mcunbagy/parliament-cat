@@ -19,42 +19,30 @@ class backspacex:
 
         #komsu renklerin puanlarini bul
         for tup in self.colors.values(): #.values()
-          try:
+          if (y+50 < 750):
             if tuple(img[y+50,x]) in tup: puan1 = tup[1]
-          except : pass
-          try:
+          if (x+50 < 750):
             if tuple(img[y, x+50]) in tup : puan2 = tup[1]
-          except : pass
-          try:
+          if (y - 50 > 0 ):          
             if tuple(img[y-50, x]) in tup : puan3 = tup[1]
-          except : pass
-          try:
+          if (x-50 >0 ):
             if tuple(img[y, x-50]) in tup :  puan4 = tup[1]
-          except : pass
-          try:
+          if (y+50 < 750) && (x+50 < 750):
             if tuple(img[y+50, x+50]) in tup :  puan5 = tup[1]
-          except : pass
-          try:
+          if (y-50 >0) && (x-50 >0):
             if tuple(img[y-50, x-50]) in tup :   puan6 = tup[1]
-          except : pass
-          try:
+          if (y+50 < 750) && (x-50 >0):
             if tuple(img[y+50, x-50]) in tup :  puan7 = tup[1]
-          except : pass
-          try:
+          if (y-50 >0) && (x+50 < 750):
             if tuple(img[y-50, x+50]) in tup :  puan8 = tup[1]
-          except : pass
-          try:
+          if (y+100<750):
             if tuple(img[y+100,x]) in tup :  puan9 = tup[1]
-          except : pass
-          try:
+          if (x+100 < 750):
             if tuple(img[y,x+100]) in tup :  puan10 = tup[1]
-          except : pass
-          try:
+          if (y-100 > 0):
             if tuple(img[y-100,x]) in tup :  puan11 = tup[1]
-          except : pass
-          try:
+          if (x-100 > 0):
             if tuple(img[y, x-100]) in tup :  puan12 = tup[1]
-          except : pass
 
         #hedef noktasini bul ve oraya git  
         hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
