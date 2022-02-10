@@ -5,14 +5,22 @@ class backspacex:
         self.name = userName # your object will be given a user name, i.e. your group name
         self.maxStep = maxStepSize # maximum length of the returned path from run()
         self.maxTime = maxTime # run() is supposed to return before maxTime
-        self.colors = clrDictionary                                                                                                                                                                                                        
+        self.colors = clrDictionary
+
+                                                                                                                                                                                                           
     def run(self, img, info):
         myinfo = info[self.name]
+        imS = img.shape[0] # assume square image and get size
+        # get current location 
+        loc, game_point = info[self.name]
+        y,x = loc # get current y,x coordinates
+        # a very simple randomizer
+        maxL = self.maxStep # total travel     
 
         #komsu renklerin puanlarini bul
         for tup in self.colors.values(): #.values()
           try:
-            if tuple([img[myinfo[0][0]+50,myinfo[0][1]]]) in tup : puan1 = tup[1]
+            if tuple(img[myinfo[0][0]+50, myinfo[0][1]]) in tup : puan1 = tup[1]
           except : pass
           try:
             if tuple([img[[myinfo[0][0], myinfo[0][1]+50]]]) in tup : puan2 = tup[1]
@@ -51,37 +59,37 @@ class backspacex:
         #hedef noktasini bul ve oraya git  
         hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
         if hedef == puan1: 
-            return  [ [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]+1 ] ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]+50 , myinfo[0][1]+1 ] ]
         
         if hedef == puan2:
             return  [ [ myinfo[0][0] , myinfo[0][1]+50 ] , [ myinfo[0][0]+1 , myinfo[0][1]+50 ] ]
         
         if hedef == puan3: 
-            return  [ [ myinfo[0][0]-50 , myinfo[0][1] ] , [ myinfo[0][0]-50 , myinfo[0][1]+1 ] ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]-50 , myinfo[0][1]+1 ] ]
         
         if hedef == puan4:
             return  [ [ myinfo[0][0] , myinfo[0][1]-50 ] , [ myinfo[0][0]+1 , myinfo[0][1]-50 ] ]
         
         if hedef == puan5: 
-            return  [ [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ]  ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]+50 ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ]  ]
         
         if hedef == puan6:
-            return  [ [ myinfo[0][0]-50 , myinfo[0][1] ] , [ myinfo[0][0]-50 , myinfo[0][1]-50 ] ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]-50 ] , [ myinfo[0][0]-50 , myinfo[0][1]-50 ] ]
         
         if hedef == puan7: 
-            return  [ [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]-50 ]  ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]-50 ] , [ myinfo[0][0]+50 , myinfo[0][1]-50 ]  ]
         
         if hedef == puan8:
-            return  [ [ myinfo[0][0]-50 , myinfo[0][1] ] , [ myinfo[0][0]-50 , myinfo[0][1]+50 ]  ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]+50 ] , [ myinfo[0][0]-50 , myinfo[0][1]+50 ]  ]
         
         if hedef == puan9:
-            return  [ [ myinfo[0][0]+100 , myinfo[0][1] ] , [ myinfo[0][0]+100 , myinfo[0][1]+1 ] ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]+100 , myinfo[0][1]+1 ] ]
         
         if hedef == puan10:
             return  [ [ myinfo[0][0] , myinfo[0][1]+100 ] , [ myinfo[0][0]+1 , myinfo[0][1]+100 ] ]
         
         if hedef == puan11:
-            return  [ [ myinfo[0][0]-100 , myinfo[0][1] ] , [ myinfo[0][0]-100 , myinfo[0][1]+1 ] ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]-100 , myinfo[0][1]+1 ] ]
         
         if hedef == puan12:
             return  [ [ myinfo[0][0] , myinfo[0][1]-100 ] , [ myinfo[0][0]+1 , myinfo[0][1]-100 ] ]
