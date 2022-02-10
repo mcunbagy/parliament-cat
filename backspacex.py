@@ -89,11 +89,11 @@ class backspacex:
             return  [ [ myinfo[0][0] , myinfo[0][1]+100 ] , [ myinfo[0][0]+1 , myinfo[0][1]+100 ], [ myinfo[0][0]+1 , myinfo[0][1]+101 ] ]
         
         if hedef == puan11:
-            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]-100 , myinfo[0][1]+1 ],  , [ myinfo[0][0]-100 , myinfo[0][1]+2 ] ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]-100 , myinfo[0][1]+1 ],   [ myinfo[0][0]-100 , myinfo[0][1]+2 ] ]
         
         if hedef == puan12:
-            return  [ [ myinfo[0][0] , myinfo[0][1]-100 ] , [ myinfo[0][0]+1 , myinfo[0][1]-100 ] , , [ myinfo[0][0]+1 , myinfo[0][1]-101 ] ]
+            return  [ [ myinfo[0][0] , myinfo[0][1]-100 ] , [ myinfo[0][0]+1 , myinfo[0][1]-100 ] , [ myinfo[0][0]+1 , myinfo[0][1]-101 ] ]
         
         else : 
-            return  [ [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ], , [ myinfo[0][0]+50 , myinfo[0][1]+51 ] ]
+            return  [ [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ],  [ myinfo[0][0]+50 , myinfo[0][1]+51 ] ]
 
