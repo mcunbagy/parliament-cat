@@ -26,7 +26,7 @@ class backspacex:
             if tuple(img[y, x+50]) in tup : puan2 = tup[1]
           except : pass
           try:
-            if tuple([img[y-50, x]) in tup : puan3 = tup[1]
+            if tuple(img[y-50, x]) in tup : puan3 = tup[1]
           except : pass
           try:
             if tuple(img[y, x-50]) in tup :  puan4 = tup[1]
