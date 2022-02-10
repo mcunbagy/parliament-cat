@@ -27,13 +27,13 @@ class backspacex:
             if tuple(img[y-50, x]) in tup : puan3 = tup[1]
           if (x-50 >0 ):
             if tuple(img[y, x-50]) in tup :  puan4 = tup[1]
-          if (y+50 < 750) && (x+50 < 750):
+          if (y+50 < 750) and (x+50 < 750):
             if tuple(img[y+50, x+50]) in tup :  puan5 = tup[1]
-          if (y-50 >0) && (x-50 >0):
+          if (y-50 >0) and (x-50 >0):
             if tuple(img[y-50, x-50]) in tup :   puan6 = tup[1]
-          if (y+50 < 750) && (x-50 >0):
+          if (y+50 < 750) and (x-50 >0):
             if tuple(img[y+50, x-50]) in tup :  puan7 = tup[1]
-          if (y-50 >0) && (x+50 < 750):
+          if (y-50 >0) and (x+50 < 750):
             if tuple(img[y-50, x+50]) in tup :  puan8 = tup[1]
           if (y+100<750):
             if tuple(img[y+100,x]) in tup :  puan9 = tup[1]
