@@ -25,110 +25,80 @@ class oyuncuclass:
         hedef_coord = [y+50, x]
         for sayi1 in islemler:
           for sayi2 in islemler:
-            if abs(sayi1)+abs(sayi2)==200:
-                continue
-            
-            if tuple(img[y+sayi1,x+sayi2]) == renkler[0][0]:
-              puan=renkler[0][1]
+            #if tuple(aGame.maze[y+sayi1,x+sayi2]) == tuple(renks[0][0]):
+
+            if tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[0][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[0][1])
+              puan=renks[0][1]
               if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[1][0]:
-              puan=renkler[1][1]
-              if puan>hedef_puan:
+                #print('0')
                 hedef_puan=puan
                 hedef_coord=[y+sayi1,x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[2][0]:
-              puan=renkler[2][1]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[1][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[1][1])
+              puan=renks[1][1]
               if puan>hedef_puan:
+                #print('1')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[3][0]:
-              puan=renkler[3][1]
+                hedef_coord=[y+sayi1,x+sayi2]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[2][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[2][1])
+              puan=renks[2][1]
               if puan>hedef_puan:
+                #print('2')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[4][0]:
-              puan=renkler[4][1]
+                hedef_coord=[y+sayi1,x+sayi2]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[3][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[3][1])
+              puan=renks[3][1]
               if puan>hedef_puan:
+                #print('3')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[5][0]:
-              puan=renkler[5][1]
+                hedef_coord=[y+sayi1,x+sayi2]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[4][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[4][1])
+              puan=renks[4][1]
               if puan>hedef_puan:
+                #print('4')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[6][0]:
-              puan=renkler[6][1]
+                hedef_coord=[y+sayi1,x+sayi2]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[5][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[5][1])
+              puan=renks[5][1]
               if puan>hedef_puan:
+                #print('5')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[7][0]:
-              puan=renkler[7][1]
+                hedef_coord=[y+sayi1,x+sayi2]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[6][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[6][1])
+              puan=renks[6][1]
               if puan>hedef_puan:
+                #print('6')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[8][0]:
-              puan=renkler[8][1]
+                hedef_coord=[y+sayi1,x+sayi2]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[7][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[7][1])
+              puan=renks[7][1]
               if puan>hedef_puan:
+                #print('7')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[9][0]:
-              puan=renkler[9][1]
+                hedef_coord=[y+sayi1,x+sayi2]
+            elif tuple(aGame.maze[y+sayi1, x+sayi2]) == tuple(renks[8][0]):
+              #print(tuple(aGame.maze[y+sayi1,x+sayi2]))
+              #print(renks[8][1])
+              puan=renks[8][1]
               if puan>hedef_puan:
+                #print('8')
                 hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[10][0]:
-              puan=renkler[10][1]
-              if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[11][0]:
-              puan=renkler[11][1]
-              if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[12][0]:
-              puan=renkler[12][1]
-              if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[13][0]:
-              puan=renkler[13][1]
-              if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[14][0]:
-              puan=renkler[14][1]
-              if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[15][0]:
-              puan=renkler[15][1]
-              if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
-            
-            elif tuple(img[y+sayi1,x+sayi2]) == renkler[16][0]:
-              puan=renkler[16][1]
-              if puan>hedef_puan:
-                hedef_puan=puan
-                hedef_coord=[y+sayi1, x+sayi2]
+                hedef_coord=[y+sayi1,x+sayi2]
             
             else :
               continue
