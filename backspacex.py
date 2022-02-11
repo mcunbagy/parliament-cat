@@ -20,8 +20,9 @@ class oyuncuclass:
 
         #komsu renklerin puanlarini bul
         for tup in renkler:
-          if (y+50 < 750):
-            if tuple(img[y+50,x]) in tup:
+          if(y+50 < 750):
+            renk1=tuple(img[y+50 , x])
+            if renk1 in tup:
                 puan1 = tup[1]
             else:
                 puan1=0
@@ -29,15 +30,17 @@ class oyuncuclass:
             puan1=0
           
           if (x+50 < 750):
-            if tuple(img[y, x+50]) in tup:
+            renk2=tuple(img[y, x+50])
+            if renk2 in tup:
                 puan2 = tup[1]
             else:
                 puan2=0
           else:
             puan2=0
           
-          if (y - 50 > 0 ):          
-            if tuple(img[y-50, x]) in tup:
+          if (y - 50 > 0 ):
+            renk3=tuple(img[y-50,x])
+            if renk3 in tup:
                 puan3 = tup[1]
             else:
                 puan3=0
@@ -45,7 +48,8 @@ class oyuncuclass:
             puan3=0
           
           if (x-50>0):
-            if tuple(img[y, x-50]) in tup:
+          renk4=tuple(img[y, x-50])
+            if renk4 in tup:
                 puan4 = tup[1]
             else:
                 puan4=0
@@ -53,7 +57,8 @@ class oyuncuclass:
             puan4=0
           
           if (y+50 < 750) and (x+50 < 750):
-            if tuple(img[y+50, x+50]) in tup:
+            renk5=tuple(img[y+50,x+50])
+            if renk5 in tup:
                 puan5 = tup[1]
             else:
                 puan5=0
