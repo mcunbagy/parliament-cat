@@ -22,7 +22,7 @@ class oyuncuclass:
         #5 secenek var
         islemler = [-50,0,50,100,-100]
         hedef_puan = 0
-        
+        hedef_coord = [y+50, x]
         for sayi1 in islemler:
           for sayi2 in islemler:
             if tuple(img[y+sayi1,x+sayi2]) == renkler[0][0]:
@@ -31,86 +31,86 @@ class oyuncuclass:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[1][0]:
-              puan=renkler[0][1]
+              puan=renkler[1][1]
               hedef_puan=max(hedef_puan, puan)
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[2][0]:
-              puan=renkler[0][1]
+              puan=renkler[2][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[3][0]:
-              puan=renkler[0][1]
+              puan=renkler[3][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[4][0]:
-              puan=renkler[0][1]
+              puan=renkler[4][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[5][0]:
-              puan=renkler[0][1]
+              puan=renkler[5][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[6][0]:
-              puan=renkler[0][1]
+              puan=renkler[6][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[7][0]:
-              puan=renkler[0][1]
+              puan=renkler[7][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[8][0]:
-              puan=renkler[0][1]
+              puan=renkler[8][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[9][0]:
-              puan=renkler[0][1]
+              puan=renkler[9][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[10][0]:
-              puan=renkler[0][1]
+              puan=renkler[10][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[11][0]:
-              puan=renkler[0][1]
+              puan=renkler[11][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[12][0]:
-              puan=renkler[0][1]
+              puan=renkler[12][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[13][0]:
-              puan=renkler[0][1]
+              puan=renkler[13][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[14][0]:
-              puan=renkler[0][1]
+              puan=renkler[14][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[15][0]:
-              puan=renkler[0][1]
+              puan=renkler[15][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             elif tuple(img[y+sayi1,x+sayi2]) == renkler[16][0]:
-              puan=renkler[0][1]
+              puan=renkler[16][1]
               if puan>hedef_puan:
                 hedef_puan=puan
                 hedef_coord=[y+sayi1, x+sayi2]
             else :
               continue
             
-            ny,nx=hedef_coord
+            ny,nx= hedef_coord
             return[ [y,nx] , [ny,nx], [ny,nx+1] ]
        
