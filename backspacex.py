@@ -15,7 +15,7 @@ class oyuncuclass:
         y,x = loc # get current y,x coordinates
         # a very simple randomizer
         maxL = self.maxStep # total travel
-        self.renks['white']=tuple(tuple(255,255,255),int(0),int(0))
+        self.renks['white']=((255,255,255),0,0)
         renkler = set(self.renks.values())
 
         #komsu renklerin puanlarini bul
