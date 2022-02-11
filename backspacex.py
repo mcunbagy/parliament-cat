@@ -5,7 +5,7 @@ class backspacex:
         self.name = userName # your object will be given a user name, i.e. your group name
         self.maxStep = maxStepSize # maximum length of the returned path from run()
         self.maxTime = maxTime # run() is supposed to return before maxTime
-        self.colorz = clrDictionary
+        self.renks = clrDictionary
 
                                                                                                                                                                                                            
     def run(self, img, info):
@@ -15,7 +15,7 @@ class backspacex:
         y,x = loc # get current y,x coordinates
         # a very simple randomizer
         maxL = self.maxStep # total travel
-        renkler = self.colorz.values()
+        renkler = self.renks.values()
 
         #komsu renklerin puanlarini bul
         for tup in renkler:
