@@ -47,10 +47,10 @@ class oyuncuclass:
         #hedef noktasini bul ve oraya git  
         hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
         if hedef == puan1: 
-            return  [ [y, x+1], [y+50, x+1] , [y+50, x+49] ]
+            return  [ [y, x+1] , [y+50, x+1] , [y+50, x+2] ]
         
         if hedef == puan2:
-            return  [ [y , x+50 ] , [y+1 , x+50 ] , [y+1 ,x+51 ] ]
+            return  [ [y , x+50 ] , [y+1 , x+50 ] , [y+1 ,x+51] ]
         
         if hedef == puan3: 
             return  [ [y, x+1 ] , [y-50 , x+1 ] , [y-50 , x+2 ] ]
