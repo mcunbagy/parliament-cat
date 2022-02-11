@@ -15,10 +15,11 @@ class backspacex:
         loc, game_point = info[self.name]
         y,x = loc # get current y,x coordinates
         # a very simple randomizer
-        maxL = self.maxStep # total travel     
+        maxL = self.maxStep # total travel
+        colors = tuple(self.colors.values())
 
         #komsu renklerin puanlarini bul
-        for tup in self.colors.values(): #.values()
+        for tup in colors:
           if (y+50 < 750):
             if tuple(img[y+50,x]) in tup: puan1 = tup[1]
           if (x+50 < 750):
