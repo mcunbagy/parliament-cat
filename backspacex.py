@@ -22,7 +22,7 @@ class oyuncuclass:
         #komsu renklerin puanlarini bul
         for tup in renkler:
           if (y+50 < 750):
-            if tuple(img[y+50,x]) in tup: komsupuanlar.add(tup[0],tup[1])
+            if tuple(img[y+50,x]) in tup: komsupuanlar.add(tup[1])
           if (x+50 < 750):
             if tuple(img[y, x+50]) in tup: komsupuanlar.add(tup[1])
           if (y - 50 > 0 ):          
