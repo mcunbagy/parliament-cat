@@ -17,7 +17,18 @@ class oyuncuclass:
         maxL = self.maxStep # total travel
         self.renks['white']=((255,255,255),0,0)
         renkler = set(self.renks.values())
-
+        puan1=0
+        puan2=0
+        puan3=0
+        puan4=0
+        puan5=0
+        puan6=0
+        puan7=0
+        puan8=0
+        puan9=0
+        puan10=0
+        puan11=0
+        puan12=0
         #komsu renklerin puanlarini bul
         for tup in renkler:
           if(y+50 < 750):
