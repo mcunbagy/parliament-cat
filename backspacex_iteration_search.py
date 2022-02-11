@@ -105,6 +105,6 @@ class oyuncuclass:
             else :
               continue
             
-            ny,nx= hedef_coord
-            return[ [y,nx] , [ny,nx], [ny,nx+1] ]
+        ny,nx= hedef_coord
+        return[ [y,nx] , [ny,nx], [ny,nx+1] ]
        
