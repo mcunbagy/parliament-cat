@@ -15,8 +15,8 @@ class oyuncuclass:
         y,x = loc # get current y,x coordinates
         # a very simple randomizer
         maxL = self.maxStep # total travel
+        self.renks['white']=((255,255,255),0,0)
         renkler = self.renks.values()
-        
 
         #komsu renklerin puanlarini bul
         for tup in renkler:
@@ -24,8 +24,6 @@ class oyuncuclass:
             renk1=tuple(img[y+50 , x])
             if renk1 in tup:
                 puan1 = tup[1]
-            else:
-                puan1=0
           else:
             puan1=0
           
@@ -33,8 +31,6 @@ class oyuncuclass:
             renk2=tuple(img[y, x+50])
             if renk2 in tup:
                 puan2 = tup[1]
-            else:
-                puan2=0
           else:
             puan2=0
           
@@ -42,8 +38,6 @@ class oyuncuclass:
             renk3=tuple(img[y-50,x])
             if renk3 in tup:
                 puan3 = tup[1]
-            else:
-                puan3=0
           else:
             puan3=0
           
@@ -51,8 +45,6 @@ class oyuncuclass:
             renk4=tuple(img[y, x-50])
             if renk4 in tup:
                 puan4 = tup[1]
-            else:
-                puan4=0
           else:
             puan4=0
           
@@ -60,64 +52,48 @@ class oyuncuclass:
             renk5=tuple(img[y+50,x+50])
             if renk5 in tup:
                 puan5 = tup[1]
-            else:
-                puan5=0
           else:
             puan5=0
           
           if (y-50 >0) and (x-50 >0):
             if tuple(img[y-50, x-50]) in tup:
                 puan6 = tup[1]
-            else:
-                puan6=0
           else:
             puan6=0
           
           if (y+50 < 750) and (x-50 >0):
             if tuple(img[y+50, x-50]) in tup:
                 puan7 = tup[1]
-            else:
-                puan7=0
           else:
             puan7=0
           
           if (y-50 >0) and (x+50 < 750):
             if tuple(img[y-50, x+50]) in tup:
                 puan8 = tup[1]
-            else:
-                puan8=0
           else:
             puan8=0
           
           if (y+100<750):
             if tuple(img[y+100,x]) in tup:
                 puan9 = tup[1]
-            else:
-                puan9=0
           else:
             puan9=0
           
           if (x+100 < 750):
             if tuple(img[y,x+100]) in tup:
                 puan10 = tup[1]
-            else:
-                puan10=0
           else:
             puan10=0
           
           if (y-100 > 0):
             if tuple(img[y-100,x]) in tup:
                 puan11 = tup[1]
-            else:
-                puan11=0
           else:
             puan11=0
           
           if (x-100 > 0):
             if tuple(img[y, x-100]) in tup:
                 puan12 = tup[1]
-            else:
-                puan12=0
           else:
             puan12=0
         
