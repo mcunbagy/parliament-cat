@@ -16,6 +16,8 @@ class oyuncuclass:
         # a very simple randomizer
         maxL = self.maxStep # total travel
         renkler = self.renks.values()
+        komsupuanlar = set()
+        
 
         #komsu renklerin puanlarini bul
         for tup in renkler:
