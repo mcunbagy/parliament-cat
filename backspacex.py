@@ -22,29 +22,31 @@ class oyuncuclass:
         #komsu renklerin puanlarini bul
         for tup in renkler:
           if (y+50 < 750):
-            if tuple(img[y+50,x]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y+50,x]) in tup: puan1 = tup[1]
+          else:
+            puan1=0
           if (x+50 < 750):
-            if tuple(img[y, x+50]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y, x+50]) in tup: puan2 = tup[1]
           if (y - 50 > 0 ):          
-            if tuple(img[y-50, x]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y-50, x]) in tup: puan3 = tup[1]
           if (x-50 >0 ):
-            if tuple(img[y, x-50]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y, x-50]) in tup: puan4 = tup[1]
           if (y+50 < 750) and (x+50 < 750):
-            if tuple(img[y+50, x+50]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y+50, x+50]) in tup: puan5 = tup[1]
           if (y-50 >0) and (x-50 >0):
-            if tuple(img[y-50, x-50]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y-50, x-50]) in tup: puan6 = tup[1]
           if (y+50 < 750) and (x-50 >0):
-            if tuple(img[y+50, x-50]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y+50, x-50]) in tup: puan7 = tup[1]
           if (y-50 >0) and (x+50 < 750):
-            if tuple(img[y-50, x+50]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y-50, x+50]) in tup: puan8 = tup[1]
           if (y+100<750):
-            if tuple(img[y+100,x]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y+100,x]) in tup: puan9 = tup[1]
           if (x+100 < 750):
-            if tuple(img[y,x+100]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y,x+100]) in tup: puan10 = tup[1]
           if (y-100 > 0):
-            if tuple(img[y-100,x]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y-100,x]) in tup: puan11 = tup[1]
           if (x-100 > 0):
-            if tuple(img[y, x-100]) in tup: komsupuanlar.add(tup[1])
+            if tuple(img[y, x-100]) in tup: puan12 = tup[1]
         
         #hedef noktasini bul ve oraya git  
         hedef = max(komsupuanlar)
