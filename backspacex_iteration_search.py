@@ -26,6 +26,8 @@ class oyuncuclass:
         for sayi1 in islemler:
           for sayi2 in islemler:
             #if tuple(img[y+sayi1,x+sayi2]) == tuple(renkler[0][0]):
+            if y+sayi1<0 or y+sayi1>750 : continue
+            if x+sayi2<0 or x+sayi2>750 : continue
 
             if tuple(img[y+sayi1, x+sayi2]) == tuple(renkler[0][0]):
               #print(tuple(img[y+sayi1,x+sayi2]))
