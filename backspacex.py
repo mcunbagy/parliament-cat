@@ -15,7 +15,7 @@ class backspacex:
         y,x = loc # get current y,x coordinates
         # a very simple randomizer
         maxL = self.maxStep # total travel
-        renkler = tuple(self.colorz.values())
+        renkler = self.colorz.values()
 
         #komsu renklerin puanlarini bul
         for tup in renkler:
