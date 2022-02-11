@@ -45,7 +45,7 @@ class oyuncuclass:
             if tuple(img[y, x-100]) in tup: komsupuanlar.add(tup[1])
         
         #hedef noktasini bul ve oraya git  
-        hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
+        hedef = max(komsupuanlar)
         if hedef == puan1: 
             return  [ [y, x+1] , [y+50, x+1] , [y+50, x+2] ]
         
