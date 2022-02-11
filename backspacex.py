@@ -1,6 +1,6 @@
 import numpy as np
 import time
-class backspacex:
+class player:
     def __init__(self, userName, clrDictionary, maxStepSize, maxTime):
         self.name = userName # your object will be given a user name, i.e. your group name
         self.maxStep = maxStepSize # maximum length of the returned path from run()
