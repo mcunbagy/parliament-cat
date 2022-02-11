@@ -48,7 +48,7 @@ class oyuncuclass:
             puan3=0
           
           if (x-50>0):
-          renk4=tuple(img[y, x-50])
+            renk4=tuple(img[y, x-50])
             if renk4 in tup:
                 puan4 = tup[1]
             else:
