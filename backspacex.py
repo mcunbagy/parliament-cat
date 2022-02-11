@@ -47,41 +47,41 @@ class oyuncuclass:
         #hedef noktasini bul ve oraya git  
         hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
         if hedef == puan1: 
-            return  [ [myinfo[0][0], myinfo[0][1]+1], [myinfo[0][0]+50, myinfo[0][1]+1] , [myinfo[0][0]+50, myinfo[0][1]+49] ]
+            return  [ [y, x+1], [y+50, x+1] , [y+50, x+49] ]
         
         if hedef == puan2:
-            return  [ [ myinfo[0][0] , myinfo[0][1]+50 ] , [ myinfo[0][0]+1 , myinfo[0][1]+50 ] , [ myinfo[0][0]+1 , myinfo[0][1]+51 ] ]
+            return  [ [y , x+50 ] , [y+1 , x+50 ] , [y+1 ,x+51 ] ]
         
         if hedef == puan3: 
-            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]-50 , myinfo[0][1]+1 ] , [ myinfo[0][0]-50 , myinfo[0][1]+2 ] ]
+            return  [ [y, x+1 ] , [y-50 , x+1 ] , [y-50 , x+2 ] ]
         
         if hedef == puan4:
-            return  [ [ myinfo[0][0] , myinfo[0][1]-50 ] , [ myinfo[0][0]+1 , myinfo[0][1]-50 ] , [myinfo[0][0]+1 , myinfo[0][1]-51 ] ]
+            return  [ [y , x-50 ] , [y+1 , x-50 ] , [y+1 , x-51 ] ]
         
         if hedef == puan5: 
-            return  [ [ myinfo[0][0] , myinfo[0][1]+50 ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ] , [ myinfo[0][0]+50 , myinfo[0][1]+51]  ]
+            return  [ [y , x+50 ] , [y+50 , x+50 ] , [y+50 , x+51]  ]
         
         if hedef == puan6:
-            return  [ [ myinfo[0][0] , myinfo[0][1]-50 ] , [ myinfo[0][0]-50 , myinfo[0][1]-50 ] , [ myinfo[0][0]-50 , myinfo[0][1]-51 ] ]
+            return  [ [y , x-50 ] , [y-50 , x-50 ] , [ y-50 , x-51 ] ]
         
         if hedef == puan7: 
-            return  [ [ myinfo[0][0] , myinfo[0][1]-50 ], [ myinfo[0][0]-50 , myinfo[0][1]-50 ] , [ myinfo[0][0]-50 , myinfo[0][1]-51 ]  ]
+            return  [ [y , x-50 ], [ y-50 , x-50 ] , [ y-50 ,x-51 ]  ]
         
         if hedef == puan8:
-            return  [ [ myinfo[0][0] , myinfo[0][1]+50 ] , [ myinfo[0][0]-50 , myinfo[0][1]+50 ] , [ myinfo[0][0]-50 , myinfo[0][1]+51 ]  ]
+            return  [ [y , x+50 ] , [y-50 , x+50 ] , [ y-50 , x+51 ]  ]
         
         if hedef == puan9:
-            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]+100 , myinfo[0][1]+1 ]  , [ myinfo[0][0]+100 , myinfo[0][1]+2 ] ]
+            return  [ [y , x+1 ] , [ y+100 , x+1 ]  , [ y+100 ,x+2 ] ]
         
         if hedef == puan10:
-            return  [ [ myinfo[0][0] , myinfo[0][1]+100 ] , [ myinfo[0][0]+1 , myinfo[0][1]+100 ], [ myinfo[0][0]+1 , myinfo[0][1]+101 ] ]
+            return  [ [y , x+100 ] , [ y+1 , x+100 ], [ y+1 , x+101 ] ]
         
         if hedef == puan11:
-            return  [ [ myinfo[0][0] , myinfo[0][1]+1 ] , [ myinfo[0][0]-100 , myinfo[0][1]+1 ],   [ myinfo[0][0]-100 , myinfo[0][1]+2 ] ]
+            return  [ [y , x+1 ] , [ y-100 ,x+1 ],   [ y-100 , x+2 ] ]
         
         if hedef == puan12:
-            return  [ [ myinfo[0][0] , myinfo[0][1]-100 ] , [ myinfo[0][0]+1 , myinfo[0][1]-100 ] , [ myinfo[0][0]+1 , myinfo[0][1]-101 ] ]
+            return  [ [y, x-100 ] , [y+1 , x-100 ] , [ y+1 , x-101 ] ]
         
         else : 
-            return  [ [ myinfo[0][0], myinfo[0][1]+50 ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ],  [ myinfo[0][0]+50 , myinfo[0][1]+51 ] ]
+            return  [ [y, x+50 ] , [ y+50 , x+50 ],  [ y+50 , x+51 ] ]
 
