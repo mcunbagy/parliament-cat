@@ -25,6 +25,8 @@ class oyuncuclass:
         hedef_coord = [y+50, x]
         for sayi1 in islemler:
           for sayi2 in islemler:
+            if abs(sayi1)+abs(sayi2)==200:
+                continue
             
             if tuple(img[y+sayi1,x+sayi2]) == renkler[0][0]:
               puan=renkler[0][1]
