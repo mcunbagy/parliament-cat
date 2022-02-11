@@ -16,7 +16,6 @@ class oyuncuclass:
         # a very simple randomizer
         maxL = self.maxStep # total travel
         renkler = self.renks.values()
-        komsupuanlar = set()
         
 
         #komsu renklerin puanlarini bul
@@ -71,7 +70,7 @@ class oyuncuclass:
           else:puan12=0
         
         #hedef noktasini bul ve oraya git  
-        hedef = max(komsupuanlar)
+        hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
         if hedef == puan1: 
             return  [ [y, x+1] , [y+50, x+1] , [y+50, x+2] ]
         
