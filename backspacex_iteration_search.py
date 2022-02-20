@@ -1,3 +1,10 @@
+'''
+Written by :
+Mehmet Can Biyik
+Nuri Kafali
+'''
+#backup code for team backspacex
+
 import numpy as np
 import time
 class backspacex:
