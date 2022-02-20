@@ -1,3 +1,11 @@
+'''
+Written by team backspacex:
+Uras Alkas
+Gorkem Buharali
+Mehmet Can Biyik
+Utkan Sivrikaya
+Nuri Kafali
+'''
 import numpy as np
 class backspacex:
    def __init__(self, userName, clrDictionary, maxStepSize, maxTime):
